@@ -1,0 +1,99 @@
+/* Questo file CSS definisce lo stile per una pagina web che include: 
+    - Font Arial, sans-serif e testo centrato per il corpo della pagina. 
+    - Titoli h1 e h3 con transizione di opacità. 
+    - Tag select, input e button centrati con padding e dimensione del font specificata. 
+    - Un contenitore principale con transizione di opacità, centrato sia orizzontalmente che 
+      verticalmente, con altezza al 100% della viewport e colore di sfondo. 
+    - Un contenitore per i risultati con margine, padding, bordo, colore di sfondo, angoli 
+      arrotondati, ombra e transizioni per trasformazione, ombra e colore di sfondo. */
+
+/* Il corpo della pagina utilizza il font Arial, sans-serif e il testo è centrato. */
+body { 
+    /* Imposta il font della pagina */ 
+    font-family: Arial, sans-serif; 
+    /* Centra il testo */ 
+    text-align: center; 
+}
+
+/* I titoli h1 e h3 hanno un margine superiore e inferiore di 5px, sono inizialmente trasparenti e 
+   hanno una transizione di opacità di 0.5s. */
+h1, 
+h3 { 
+    /* Imposta il margine superiore e inferiore */ 
+    margin: 5px 0; 
+    /* Rende il testo trasparente */ 
+    opacity: 0; 
+    /* Aggiunge una transizione per l'opacità */ 
+    transition: opacity 0.5s ease-in-out; 
+}
+
+/* Quando i titoli h1 e h3 hanno la classe 'visible', diventano opachi (visibili). */
+h1.visible, 
+h3.visible { 
+    /* Rende il testo visibile */ 
+    opacity: 1; 
+}
+
+/* Gli elementi select, input e button sono visualizzati come blocchi, centrati con margine 
+   automatico, hanno un padding di 10px e una dimensione del font di 16px. */
+select, 
+input, 
+button { 
+    /* Imposta l'elemento come blocco */ 
+    display: block; 
+    /* Centra l'elemento con margine automatico */ 
+    margin: 10px auto; 
+    /* Aggiunge padding interno */ 
+    padding: 10px; 
+    /* Imposta la dimensione del font */ 
+    font-size: 16px; 
+}
+
+/* Il contenitore principale è inizialmente trasparente, ha una transizione di opacità di 0.5s, è 
+   un flexbox centrato sia orizzontalmente che verticalmente, ha un'altezza del 100% della 
+   viewport e un colore di sfondo #f0f0f0. */
+.container { 
+    /* Rende il contenitore trasparente */ 
+    opacity: 0; 
+    /* Aggiunge una transizione per l'opacità */ 
+    transition: opacity 0.5s ease-in-out; 
+    /* Imposta il contenitore come flexbox */ 
+    display: flex; 
+    /* Centra gli elementi orizzontalmente */ 
+    justify-content: center; 
+    /* Centra gli elementi verticalmente */ 
+    align-items: center; 
+    /* Imposta l'altezza del contenitore al 100% della viewport */ 
+    height: 100vh; 
+    /* Imposta il colore di sfondo */ 
+    background-color: #f0f0f0; 
+}
+
+/* Quando il contenitore principale ha la classe 'visible', diventa visibile e viene visualizzato 
+   come blocco. */
+.container.visible { 
+    /* Imposta il contenitore come blocco */ 
+    display: block; 
+    /* Rende il contenitore visibile */ 
+    opacity: 1; 
+}
+
+/* Il contenitore per i risultati ha un margine superiore di 20px, un padding di 10px, un bordo di 
+   1px solido #ccc, un colore di sfondo #ffffff, angoli arrotondati di 5px, un'ombra e transizioni 
+   per trasformazione, ombra e colore di sfondo di 0.1s. */
+.results-container { 
+    /* Aggiunge un margine superiore */ 
+    margin-top: 20px; 
+    /* Aggiunge padding interno */ 
+    padding: 10px; 
+    /* Imposta un bordo */ 
+    border: 1px solid #ccc; 
+    /* Imposta il colore di sfondo */ 
+    background-color: #ffffff; 
+    /* Arrotonda gli angoli del bordo */ 
+    border-radius: 5px; 
+    /* Aggiunge un'ombra */ 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    /* Aggiunge una transizione per trasformazione, ombra e colore di sfondo */ 
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease; 
+}

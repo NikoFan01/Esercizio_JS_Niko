@@ -1,0 +1,56 @@
+<!-- Questa pagina permette di calcolare l'area di diverse forme geometriche. L'utente può 
+selezionare una forma dal menu a tendina, inserire i valori richiesti e calcolare l'area. 
+I risultati possono essere visualizzati e cancellati tramite i pulsanti presenti nella pagina. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Impostazione del set di caratteri della pagina -->
+    <meta charset="UTF-8" />
+    <!-- Titolo della pagina che appare nella scheda del browser -->
+    <title>Calcolo Aree</title>
+    <!-- Collegamento al file CSS per lo stile della pagina -->
+    <link rel="stylesheet" href="calcoloAree.css">
+</head>
+
+<body>
+    <!-- Contenitore principale della pagina -->
+    <div class="container">
+        <!-- Contenitore principale per la sezione di calcolo -->
+        <div class="box">
+            <h1>Calcolo dell'Area di Forme Geometriche</h1>
+            <!-- Menu per scegliere la forma -->
+            <select id="shapeSelector">
+                <!-- Opzioni per selezionare la forma geometrica -->
+                <option value="circle">Cerchio</option>
+                <option value="square">Quadrato</option>
+                <option value="rectangle">Rettangolo</option>
+                <option value="triangle">Triangolo</option>
+                <option value="rhombus">Rombo</option>
+                <option value="trapezoid">Trapezio</option>
+                <option value="parallelogram">Parallelogramma</option>
+                <option value="kite">Aquilone</option>
+                <option value="regularPolygon">Poligono Regolare</option>
+                <option value="ellipse">Ellisse</option>
+                <option value="semicircle">Semicerchio</option>
+            </select>
+            <!-- Qui appariranno i campi di input in base alla forma selezionata -->
+            <div id="inputFields"></div>
+            <!-- Pulsante per calcolare l'area della forma selezionata -->
+            <button onclick="calculateArea()">Calcola</button>
+            <!-- Risultato del calcolo dell'area -->
+            <h3 id="result"></h3>
+            <!-- Qui appariranno i risultati dei calcoli precedenti -->
+            <div id="resultsContainer" class="results-container"></div>
+            <!-- Pulsante per cancellare i risultati precedenti -->
+            <button onclick="clearResults()">Cancella Cronologia</button>
+            <!-- Messaggio di fine calcoli, visibile solo quando tutti i calcoli sono terminati -->
+            <h3 id="endMessage" style="display: none;">Hai terminato i calcoli. Grazie!</h3>
+        </div>
+    </div>
+    <!-- Collegamento al file JavaScript per le funzioni di calcolo -->
+    <script src="calcoloAree.js"></script>
+</body>
+
+</html>
