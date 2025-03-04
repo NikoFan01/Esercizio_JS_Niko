@@ -1,0 +1,51 @@
+<!-- Questa pagina HTML è un semplice esempio di manipolazione del DOM (Document Object Model) 
+    utilizzando JavaScript. La pagina include un titolo principale, un paragrafo di testo, un 
+    campo di input per inserire testo e due pulsanti. Il primo pulsante permette di cambiare il 
+    testo del paragrafo con il contenuto inserito nel campo di input. Il secondo pulsante invece
+    permette di resettare il testo del paragrafo al suo stato originale. La pagina include anche 
+    un file CSS esterno per la presentazione e un file JavaScript esterno per la manipolazione 
+    del DOM. Sono stati aggiunti attributi per migliorare l'accessibilità e la responsività della 
+    pagina. -->
+
+<!DOCTYPE html>
+<!-- Aggiunto attributo lang per una migliore accessibilità -->
+<html lang="it">
+
+<head>
+    <!-- Aggiunto l'attributo charset -->
+    <meta charset="UTF-8">
+    <!-- Aggiunto meta tag viewport per design responsivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titolo della pagina -->
+    <title>Manipolazione del DOM</title>
+    <!-- Collegato file CSS esterno per la presentazione -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Titolo principale della pagina -->
+    <h1 id="titolo">Titolo originale</h1>
+    <!-- Paragrafo di esempio -->
+    <p id="testo">Questo è un paragrafo statico.</p>
+    <!-- Campo di input per inserire testo -->
+    <input type="text" id="inputTesto" placeholder="Scrivi qualcosa..." aria-label="Campo di testo" />
+    <!-- Pulsante per cambiare il testo del paragrafo -->
+    <button id="changeTextBtn" aria-label="Cambia il testo del paragrafo">Cambia Testo</button>
+    <!-- Pulsante per resettare il testo del paragrafo -->
+    <button id="btnReset" aria-label="Resetta il testo del paragrafo">Resetta Testo</button>
+
+    <!-- Aggiunto titolo per il secondo esercizio -->
+    <h1>Cambia Colore Box</h1>
+    <!-- Div per il cambio di colore -->
+    <div id="colorBox">BOX</div>
+    <!-- Pulsante per cambiare il colore del box -->
+    <button id="changeColorBtn" aria-label="Cambia colore del box">Cambia Colore</button>
+    <!-- Pulsante aggiuntivo per resettare il colore del box -->
+    <button id="btnReset2" aria-label="Resetta il colore del box">Resetta Colore</button>
+
+    <!-- Collegato script.js per la manipolazione del DOM -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

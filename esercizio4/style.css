@@ -1,0 +1,123 @@
+/* Questo file CSS definisce lo stile di base per un documento HTML. Include stili per il corpo 
+    del testo, intestazioni, input e pulsanti. Il corpo del testo utilizza il font Arial con un 
+    margine di 20px e un colore di sfondo grigio chiaro (#f4f4f4). Le intestazioni h1 hanno un 
+    colore del testo scuro (#333) e una dimensione del font aumentata per maggiore visibilità 
+    (24px). Gli input e i pulsanti hanno padding per una migliore usabilità, una dimensione del 
+    font di 16px, un bordo solido di 1px con colore grigio chiaro (#ccc), e bordi arrotondati. I 
+    pulsanti hanno un cursore pointer, un colore di sfondo blu (#007BFF), testo bianco, nessun 
+    bordo, e una transizione per l'effetto hover che cambia il colore di sfondo a un blu più 
+    scuro (#0056b3). Gli input in focus hanno un bordo colorato di blu (#007BFF) e rimuovono il 
+    bordo di default. */
+
+body {
+    /* Aggiunto font di base per il corpo del testo */
+    font-family: Arial, sans-serif;
+    /* Aggiunto allineamento del testo al centro */
+    text-align: center;
+    /* Aggiunto margine per il corpo del testo */
+    margin: 20px;
+    /* Aggiunto colore di sfondo */
+    background-color: #f4f4f4;
+    /* aggiunto margine superiore per spaziatura */
+    margin-top: 50px;
+}
+
+h1 {
+    /* Aggiunto colore del testo per l'intestazione */
+    color: #333;
+    /* Aumentata dimensione del font per maggiore visibilità */
+    font-size: 24px;
+}
+
+input,
+button {
+    /* Aggiunto padding per una migliore usabilità */
+    padding: 12px 20px;
+    /* Aumentata dimensione del font */
+    font-size: 16px;
+    /* Aggiunto bordo per input e pulsanti */
+    border: 1px solid #ccc;
+    /* Aggiunto bordo arrotondato per input e pulsanti */
+    border-radius: 4px;
+    /* Aggiunto margine superiore per una migliore usabilità */
+    margin-top: 10px;
+}
+
+button {
+    /* Aggiunto cursore pointer per i pulsanti */
+    cursor: pointer;
+    /* Aggiunto colore di sfondo al pulsante */
+    background-color: #007BFF;
+    /* Aggiunto colore del testo al pulsante */
+    color: white;
+    /* Rimosso bordo del pulsante */
+    border: none;
+    /* Aggiunto bordo arrotondato al pulsante */
+    border-radius: 5px;
+    /* Aggiunta transizione per effetto hover */
+    transition: background-color 0.3s ease;
+    /* Aggiunto padding per una migliore usabilità */
+    padding: 10px 20px;
+    /* Aggiunta dimensione del font */
+    font-size: 16px;
+}
+
+button:hover {
+    /* Aggiunto effetto hover al pulsante */
+    background-color: #0056b3;
+}
+
+input:focus {
+    /* Aggiunto colore bordo al focus dell'input */
+    border-color: #007BFF;
+    /* Rimosso bordo di default al focus dell'input */
+    outline: none;
+}
+
+#colorBox {
+    /* Aggiunto dimensioni e allineamento al centro */
+    width: 200px;
+    /* Aggiunto margine per centrare il box */
+    margin: 20px auto;
+    /* Aggiunto altezza al box */
+    height: 200px;
+    /* Aggiunto bordo al box */
+    border: 2px solid #000;
+    /* Aggiunto bordo arrotondato al box */
+    border-radius: 10px;
+    /* Aggiunto padding per centrare il testo */
+    padding: 10px;
+    /* Aggiunto colore di sfondo al box */
+    background-color: #fff;
+    /* Aggiunto flex per centrare il testo */
+    display: flex;
+    /* Aggiunto allineamento al centro */
+    align-items: center;
+    /* Aggiunto allineamento al centro */
+    justify-content: center;
+    /* Aggiunto stile del testo */
+    font-size: 20px;
+    /* Aggiunto colore del testo */
+    color: #000;
+    /* Aggiunto font-weight in grassetto */
+    font-weight: bold;
+    /* Aggiunto margine superiore per spaziatura */
+    margin-top: 20px;
+    /* Aggiunta transizione */
+    transition: background-color 0.3s ease;
+    /* Aggiunto margine inferiore per spaziatura */
+    margin-bottom: 20px;
+    /* Aggiunta dimensione del font */
+    font-size: 20px;
+    /* Aggiunta transizione per effetto hover */
+    transition: padding 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+#colorBox:hover {
+    /* Aggiunto padding per migliorare l'aspetto */
+    padding: 12px;
+    /* Aggiunto effetto ombra al box */
+    box-shadow: 0 0 12px 12px rgba(0, 0, 0, 0.2);
+    /* Aggiunta transizione per effetto hover */
+    transition: padding 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
