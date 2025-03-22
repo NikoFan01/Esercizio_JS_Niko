@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    justify-items: center;
+}
+
+h2 {
+    font-weight: 700;
+    padding: 2vh 2vw;
+}
+
+.carousel {
+    margin: 3vh 3vw;
+    padding: 2vh 2vw;
+}
+
+.carousel * {
+    margin: 1vh 1vw;
+}
+
+#image-container {
+    padding: auto;
+    border-radius: 5px;
+}
+
+#image {
+
+}
+
+.input-timer {
+    margin: 3vh 3vw;
+    padding: 2vh 2vw;
+}
+
+.input-timer * {
+    margin: 1vh 1vw;
+}
+
+button {
+
+}
+
+button:hover {
+
+}
+
+input {
+
+}
