@@ -20,17 +20,15 @@ h2 {
     margin: 1vh 1vw;
 }
 
-#image-container {
-    padding: auto;
-    border-radius: 5px;
-}
-
 #image {
-
+    max-width: 55vh;
+    max-height: 55vh;
+    border-radius: 10px;
+    aspect-ratio: auto;
 }
 
 .input-timer {
-    margin: 3vh 3vw;
+    margin: 2vh 2vw;
     padding: 2vh 2vw;
 }
 
@@ -39,13 +37,46 @@ h2 {
 }
 
 button {
-
+    margin: 10px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    border: 1px solid #ccc;
+    border-color: rgba(0, 127, 255, 0.3);
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
-
+    outline: none;
+    transition: 0.3s ease;
+    border-color: rgba(0, 127, 255, 0.6);
+    box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.2);
 }
 
 input {
+    border: 2px solid #ccc;
+    padding: 5px;
+    border-radius: 10px;
+    border-color: rgba(0, 127, 255, 0.2);
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease;
+}
 
+input:hover {
+    outline: none;
+    border-color: rgba(0, 127, 255, 0.4);
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: rgba(0, 127, 255, 0.8);
+    box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease;
+}
+
+.imgBtns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
